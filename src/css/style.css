@@ -1,11 +1,15 @@
+/*First Page ready*/
 html {
 	scroll-behavior: smooth;
 }
 body {
-	width: 100vh;
+	height: 100vh;
+	width: 100%;
 	margin: 0;
 	font-family: Montserrat;
 }
+
+/*HEADER*/
 header {
 	position: absolute;
 	width: 100%;
@@ -26,17 +30,12 @@ header {
 }
 ul {
 	list-style: none;
-	font-style: Regular;
 	font-size: 14px;
 	line-height: 17.07px;
-	line-height: 100%;
-	height: 21px;
-	width: 527px;
 	cursor: default;
 }
 .main-menu li {
 	display: inline-block;
-	margin-right: 5px;
 	margin-right: 30px;
 	white-space: nowrap; /*запретить перенос строки внутри пунктов меню*/
 }
@@ -50,16 +49,16 @@ ul {
 	margin-bottom: 2px;
 	margin-left: 3px;
 }
-.main-menu a {
-	display: block;
+a {
 	text-decoration: none;
 	color: rgba(31, 32, 65, 0.5);
+	display: block;
 }
-.main-menu a:hover {
+a:hover {
 	color: rgba(31, 32, 65, 0.75);
 	font-weight: bold;
 }
-.main-menu a:hover i {
+a:hover i {
 	border: solid rgba(31, 32, 65, 0.75);
 	border-width: 0 2px 2px 0;
 }
@@ -72,7 +71,7 @@ ul {
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 14.63px;
- 	border-radius: 20px;
+ 	border-radius: 22px;
  	padding: 0 19px;
  	margin-right: 20px;
 }
@@ -89,7 +88,6 @@ ul {
 }*/
 .box {	
 	color: #BC9CFF;
-	border-radius: 20px;
 	border: solid 3px transparent;
 	background: linear-gradient(to bottom, #BC9CFF, #8BA4F9);
 	box-shadow: 100px 100px #fff inset;
@@ -98,3 +96,161 @@ button:active,
 button:focus {
     outline: none;
 }
+
+/*MAIN PAGE*/
+.main-page {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	background: url('https://s3-alpha-sig.figma.com/img/1151/d3cc/255f6890438146aa7de26a12e25045be?Expires=1578873600&Signature=dl9xcc4wUhFcsiWXBsdGQSTrDgK08axgCS7RJ5g2NY1vMZgfeCvXT7mVB3xvxCzWZUzMmQXu0sNM9plSlPWw2hHHdrg1oE8t7VSyK6q-jdELYEGABueG~eoTXf0kZDKM4kRd0xJn7dlQmk-F2ftDtRgTOQpyQUqDzWs69-KJvDHqhTDPJ82tn~JKsQAvporBTjo69zSgs9miJxHj2vtn~hThvPnPSRDETiSjxldA97y2xYkJae9boO4icKbgcgXcpIBxFOTqUvneEMExLa4~vRF0~~VlMUD647nIoRR1UaxgptWFpTmaFikHF6rVHkDByHJzPXx3nmtAmoB47GD1Cg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA') 100% 100% no-repeat fixed; /* фоновая картинка */
+	background-size: cover; /*масштабируем фон;*/
+}
+
+
+form {
+	width: 380px;
+	height: 374px;
+	position: absolute;
+	left: 140px;
+	top: 140px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 30px;
+}
+h1, 
+h3 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: #1F2041;
+}
+h1 {
+	font-family: Quicksand;
+	font-size: 24px;	
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+h3 {
+	font-family: Montserrat;
+	font-size: 12px;	
+	line-height: 15px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.short,
+.long {
+	display: block;
+	margin: 5px 20px 20px 0;
+	height: 44px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.short {
+	width: 150px;
+}
+.long {
+	width: 320px;
+}
+button.long {
+	border-radius: 22px;
+
+}
+input {
+	padding-left: 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+}
+.signature {
+	position: absolute;
+	width: 297px;
+	height: 48px;
+	left: 1009px;
+	top: 834px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: right;
+	color: rgba(31, 32, 65, 0.75);
+}
+
+/*FOOTER*/
+.upper, 
+.lower {
+	/*position: absolute;*/
+	width: 100%;
+	/*left: 0px;*/
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+}
+.upper {
+	height: 372px;
+	/*top: 370px;*/
+	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+	justify-content: center;
+	padding-top: 100px;
+}
+.lower {
+	height: 70px;
+	/*top: 743px;*/
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	font-size: 14px;
+	line-height: 17px;
+	color: rgba(31, 32, 65, 0.75);
+	justify-content: space-between;
+	align-items: center;
+}
+p {
+	width: 260px;
+	height: 72px;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+}
+.col {
+	width: 250px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.col > h3 {
+	margin-left: 40px;
+}
+.col li {
+	padding-top: 20px;
+	color: rgba(31, 32, 65, 0.5);
+}
+#email {
+	width: 260px;
+}
+#subscribe {
+	margin-left: 0;
+	padding-bottom: 20px;
+}
+.icon {
+	padding-left: 20px;
+}
+.lower > span {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+
+
+
+
